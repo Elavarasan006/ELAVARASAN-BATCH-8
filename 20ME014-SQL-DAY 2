@@ -1,0 +1,16 @@
+create database institute;
+create table students(
+  student_id int primary key,
+  student_name varchar(30),
+  student_age int,
+  student_major varchar(30));
+insert into students values
+ (1,"Elavarasan","20","Mech"),
+ (2,"karthick","19","computer science"),
+ (3,"mahi","19","IT"),
+ (4,"hari","20","CSE"),
+ (5,"mari","19","EEE");
+select * from students;
+select * from students where student_major="computer science";
+select * from students where students_age>19;
+delete from students where student_id =3
